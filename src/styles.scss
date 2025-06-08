@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'text-pressets.scss';
+
+:root {
+  --default-font-family: Reddit Sans;
+  --neutral-900: #21214d;
+}
+
+body {
+  font-family: var(--default-font-family), sans-serif;
+}
+
+
