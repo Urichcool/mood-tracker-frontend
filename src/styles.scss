@@ -1,12 +1,56 @@
-@use 'text-pressets.scss';
+@use "text-pressets.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
 
 :root {
   --default-font-family: Reddit Sans;
+
+  --gradient: linear-gradient(180deg, #f5f5ff 72.99%, #e0e0ff 100%);
+
   --neutral-900: #21214d;
+  --neutral-600: #57577b;
+  --neutral-300: #9393b7;
+  --neutral-200: #cbcdd0;
+  --neutral-0: #ffffff;
+  --blue-700: #2a4cd5;
+  --blue-600: #4865db;
+  --blue-300: #89caff;
+  --blue-200: #c7d3f7;
+  --blue-100: #e0e6fa;
+  --red-700: #e60013;
+  --red-300: #ff9b99;
+  --indigo-200: #b8b1ff;
+  --green-300: #89e780;
+  --amber-300: #ffc97c;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 343px;
+  padding-left: 10px;
+  padding-right: 10px;
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1170px;
+  }
 }
 
 body {
   font-family: var(--default-font-family), sans-serif;
 }
-
-
